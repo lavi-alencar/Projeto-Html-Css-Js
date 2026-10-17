@@ -2,18 +2,21 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <title>Conectaê – Conectando os comércios perto de você</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <header>
     <nav class="menu-superior">
+        <a href="#inicio" class="brand" aria-label="Conectaê – início">Conecta<em>ê</em></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"></button>
         <ul class="list-nav">
             <li><a href="index.html" class="ativo">Sobre mim</a></li>
-            <li><a href="quem somos.html">Quem somos</a></li>
+            <li><a  href="quem somos.html">Quem somos</a></li>
             <li><a href="comercios.html">Comércios</a></li>
             <li><a href="serviços.html">Serviços</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="contatos.html" class="nav-cta">Contatos</a></li>
             <li><a href="agendamento.html">Agende sua experiência</a></li>
         </ul>
     </nav>
@@ -23,20 +26,22 @@
 
     <article class="box">
 
-    <h1>Bem-vindo ao Conectaê,</h1>
-    <h2>conectando os comércios perto de você!</h2>
-    <img style="width: 200px; border-radius: 50%;" src="link da img" alt="Logo do Conectaê"/>
-    <p>textinho</p>
+        <span class="eyebrow">Intersecção do comércio local de Camaçari</span>
+        <h1>Bem-vindo ao  <span>Conectaê</span>,conectando os comércios perto de você!</h1>
+        <p class="lead">Valorize quem constrói o seu bairro. Compre de quem tá perto de você!</p>
+
+        <form class="busca" id="formBusca" role="search">
+     
+        <input type="text" id="bairro" placeholder="Digite seu bairro ou CEP" aria-label="Seu bairro ou CEP" autocomplete="off">
+        
+        <button class="btn" type="submit">Buscar</button>
+        </form>
+
+        <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+      
+        <img style="width: 200px; border-radius: 50%;" src="link da img" alt="Logo do Conectaê"/>
 
     </article>
-
-    <ul class="list-select">
-            <li><a href="selecione.html" >Selecione seu bairro aqui</a></li>
-    </ul>
-
-    <ul class="list-vision">
-        <li><a href="visualize.html" >Visualizar no Google Maps</a></li>
-    </ul>
 
     <section class="comercios">
 
@@ -64,28 +69,35 @@
         <p>Depoimentos reais</p>
         <h2>O que dizem nossos clientes?!</h2>
 
-        <p>O sistema é muito útil e funcional, me ajudou muito a encontrar os serviços e comércios próximos a mim sem nenhum custo. Super indico!</p>
+        <blockquote>"O sistema é muito útil e funcional, me ajudou muito a encontrar os serviços e comércios próximos a mim sem nenhum custo. Super indico!”</blockquote>
         <img style="width: 30px; border-radius: 50%;" src="link da img" alt="Foto cliente"/>
-        <p>Mariana Costa - Dona de casa</p>
+        <footer><span class="avatar" aria-hidden="true">M</span><div><strong>Mariana Costa</strong><small>Dona de casa</small></div></footer>
 
-        <p>Que projeto sensacional! Proporcionou um grande impulso e alavancamento ao meu negócio. Me senti altamente valorizado dentro do meu próprio território.</p>
+         <blockquote>"Que projeto sensacional! Proporcionou um grande impulso e alavancamento ao meu negócio. Me senti altamente valorizado dentro do meu próprio território."</blockquote>
         <img style="width: 30px; border-radius: 50%;" src="link da img" alt="Foto cliente"/>
-        <p>Renato Silveira - Empreendedor</p>
+         <footer><span class="avatar" aria-hidden="true">R</span><div><strong>Renato Silveira</strong><small>Empreendedor</small></div></footer>
 
-        <p>Muito acessível para aqueles que não possuem facilidade com recursos tecnológicos. Obrigado!</p>
+        <blockquote>"Muito acessível para aqueles que não possuem facilidade com recursos tecnológicos. Obrigado!"</blockquote>
         <img style="width: 30px; border-radius: 50%;" src="link da img" alt="Foto cliente"/>
-        <p>Augusto José - Veterinário aposentado</p>
+       <footer><span class="avatar" aria-hidden="true">A</span><div><strong>Augusto José</strong><small>Veterinário aposentado</small></div></footer>
+      
+    </article>
     </section>
 
     <footer class="chamada-final" style="text-align: center;">
-        <h1>Pronto(a) para se integrar à maior plataforma local que reúne os comércios pertinhos de você?!</h1>
-        <h2>Venha, conecte-se e faça parte desta rede de integração comercial camaçariense!</h2>
+        <h2>Pronto(a) para se integrar à maior plataforma local que reúne os comércios pertinhos de você?!</h2>
+        <p>Venha, conecte-se e faça parte desta rede de integração comercial camaçariense!</p>
         <h3>Contato</h3>
-        <p>Número: (71) 9658-5017</p>
-        <p>E-mail: conectae.camacari@gmail.com</p>
+        <span>Número: (71) 9658-5017</span>
+        <span>E-mail: conectae.camacari@gmail.com</span>
 
         <ul class="cadastro">
             <li><a href="cadastrar.html">Cadastre seu negócio agora mesmo</a></li>
+
+        <footer class="footer">
+  <div class="container">Conectaê · Conectando os comércios perto de você!</div>
+</footer>
+
         </ul>
     </footer>
     </main>
